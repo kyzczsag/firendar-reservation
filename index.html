@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Rezerwacji Terminów</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Opcjonalnie: Dodanie biblioteki kalendarza (np. FullCalendar) -->
+  <!-- <link href='https://fullcalendar.io/releases/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' /> -->
+</head>
+<body>
+  <h1>Wybierz dogodny termin na spotkanie</h1>
+  
+  <!-- Sekcja kalendarza -->
+  <div id="calendar"></div>
+  
+  <!-- Sekcja z sugerowaną datą -->
+  <div id="suggested-date">
+    <h2>Sugerowana data:</h2>
+    <p id="best-date">Brak danych</p>
+  </div>
+
+  <!-- Firebase SDK -->
+  <!-- Firebase App (the core Firebase SDK) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <!-- Firebase Realtime Database -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+
+  <!-- Główny skrypt JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
